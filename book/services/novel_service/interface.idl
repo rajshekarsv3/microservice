@@ -1,0 +1,13 @@
+
+struct NovelProperties {
+  book_name    string
+  author_id    int  
+}
+
+struct Novel extends NovelProperties {
+  id    int
+}
+
+interface NovelService {
+  get_all_novels() []Novel
+}
